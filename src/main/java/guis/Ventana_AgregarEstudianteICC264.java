@@ -5,7 +5,7 @@ import java.awt.Dimension;
 import javax.swing.JPanel;
 import javax.swing.JLabel;
 import javax.swing.JButton;
-import datos.DatosEstudiante;
+import dominio.Estudiante;
 
 public class Ventana_AgregarEstudianteICC264 extends JFrame {
     public JPanel panel2;

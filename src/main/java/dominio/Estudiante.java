@@ -1,6 +1,8 @@
 package dominio;
-import dominio.Estudiante;
+import datos.DatosEstudiante;
 
 public class Estudiante {
-    
+    public Estudiante(){
+        DatosEstudiante datosEstudiante = new DatosEstudiante();
+    }
 }
