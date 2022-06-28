@@ -1,4 +1,6 @@
 package main;
+import datos.DatosEstudiante;
+import guis.Ventana_AgregarEstudianteICC264;
 import guis.Ventana_CursoICC264;
 
 public class Main {
@@ -6,6 +8,4 @@ public class Main {
         Ventana_CursoICC264 ventana = new Ventana_CursoICC264();
         ventana.setVisible(true);
     }
-
-
 }

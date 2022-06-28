@@ -1,4 +1,5 @@
 package guis;
+
 import javax.swing.*;
 import java.awt.Dimension;
 import javax.swing.JPanel;
@@ -26,7 +27,7 @@ public class Ventana_CursoICC264 extends JFrame {
         colocarEtiquetas();
         colocarBotonComboBox();
         colocarBoton();
-        colocarCajasDETexto();
+        colocarCajasDeTexto();
     }
 
     private void colocarPaneles(){
@@ -49,7 +50,7 @@ public class Ventana_CursoICC264 extends JFrame {
         panel.add(etiqueta2);
     }
 
-    private void colocarCajasDETexto(){
+    private void colocarCajasDeTexto(){
         JTextField cajaTexto1 = new JTextField();
         cajaTexto1.setBounds(150,80,100,20);
         panel.add(cajaTexto1);
@@ -68,7 +69,7 @@ public class Ventana_CursoICC264 extends JFrame {
 
     private void colocarBoton(){
         JButton boton2 = new JButton();
-        boton2.setText("NuevoEstudiante");
+        boton2.setText("Nuevo Estudiante");
         boton2.setBounds(250,300,150,20);
         panel.add(boton2);
     }
