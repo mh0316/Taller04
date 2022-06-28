@@ -4,6 +4,7 @@ import java.awt.Dimension;
 import javax.swing.JPanel;
 import javax.swing.JLabel;
 import javax.swing.JComboBox;
+import javax.swing.JTextField;
 import guis.Ventana_AgregarEstudianteICC264;
 
 
@@ -11,21 +12,21 @@ public class Ventana_CursoICC264 extends JFrame {
     public JPanel panel;
 
     public Ventana_CursoICC264(){
-        JComboBox comboBox = new JComboBox();
         this.setSize(500,400);
         setTitle("Curso ICC264");
         setLocationRelativeTo(null);
         setMinimumSize(new Dimension(200,200));
         setDefaultCloseOperation(EXIT_ON_CLOSE);
-        iniciarComponentes();
+        establecerPartes();
 
     }
 
-    private void iniciarComponentes(){
+    private void establecerPartes(){
         colocarPaneles();
         colocarEtiquetas();
         colocarBotonComboBox();
         colocarBoton();
+        colocarCajasDETexto();
     }
 
     private void colocarPaneles(){
@@ -48,13 +49,21 @@ public class Ventana_CursoICC264 extends JFrame {
         panel.add(etiqueta2);
     }
 
+    private void colocarCajasDETexto(){
+        JTextField cajaTexto1 = new JTextField();
+        cajaTexto1.setBounds(150,80,100,20);
+        panel.add(cajaTexto1);
+
+        JTextField cajaTexto2 = new JTextField();
+        cajaTexto2.setBounds(150,100,100,20);
+        panel.add(cajaTexto2);
+    }
+
     private void colocarBotonComboBox(){
-        JComboBox boton1 = new JComboBox();
-        boton1.setToolTipText("RUT Estudiantes ICC264");
-        boton1.setBounds(20,20,200,30);
-        panel.add(boton1);
-
-
+        JComboBox comboBox = new JComboBox();
+        comboBox.setToolTipText("RUT Estudiantes ICC264");
+        comboBox.setBounds(100,20,20,30);
+        panel.add(comboBox);
     }
 
     private void colocarBoton(){
