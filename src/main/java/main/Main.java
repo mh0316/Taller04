@@ -6,4 +6,6 @@ public class Main {
         Ventana_CursoICC264 ventana = new Ventana_CursoICC264();
         ventana.setVisible(true);
     }
+
+
 }
